@@ -72,7 +72,7 @@ This table captures the measurable business activity used for profitability and 
 
 | **Column**     | **Type**              | **Description**                                                    |
 | -------------- | --------------------- | ------------------------------------------------------------------ |
-| Sales_id       | Surrogate Primary Key | Acts as a Key identifier for each row in the fact table.           |
+| sales_id       | Surrogate Primary Key | Acts as a Key identifier for each row in the fact table.           |
 | order_id       | Foreign Key           | Links each transaction line to the order dimension                 |
 | product_id     | Foreign Key           | Links each transaction line to the product dimension               |
 | customer_id    | Foreign Key           | Links each transaction line to the customer dimension              |
@@ -180,7 +180,7 @@ The dim_date table stores calendar attributes for time-based analysis.
 | full_date   | Actual calendar date     |
 | year        | Calendar year            |
 | quarter     | Calendar quarter         |
-| month       | Calendar month number    |
+| month_number| Calendar month number    |
 | month_name  | Calendar month name      |
 | week_number | Week number              |
 | day_name    | Day of week              |
