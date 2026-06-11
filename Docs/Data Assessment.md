@@ -64,8 +64,8 @@ A single Order ID can appear multiple times in the dataset because one order may
 \- Order ID  
 \- Customer ID  
 \- Product ID  
-<br/>**Date Columns  
-**\- Order Date  
+<br/>**Date Columns**  
+\- Order Date  
 \- Ship Date  
 <br/>**Descriptive Attributes**
 
