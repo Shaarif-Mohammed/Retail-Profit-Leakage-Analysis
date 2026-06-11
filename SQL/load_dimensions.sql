@@ -122,11 +122,11 @@ FROM retail.stg_superstore;
 =========================================================
 5. Load Date Dimension
 
-The date dimension is populated using both order_date and
-ship_date from the staging table.
+The date dimension is populated as a continuous calendar
+between the minimum order date and maximum ship date.
 
-This ensures that all dates used in fact_sales are available
-for foreign key relationships.
+This ensures Power BI can mark dim_date as a valid date
+table and supports complete time intelligence.
 =========================================================
 */
 
@@ -140,24 +140,20 @@ INSERT INTO retail.dim_date (
     week_number,
     day_name
 )
-SELECT DISTINCT
+SELECT
     TO_CHAR(date_value, 'YYYYMMDD')::INTEGER AS date_key,
-    date_value AS full_date,
+    date_value::DATE AS full_date,
     EXTRACT(YEAR FROM date_value)::INTEGER AS year,
     EXTRACT(QUARTER FROM date_value)::INTEGER AS quarter,
     EXTRACT(MONTH FROM date_value)::INTEGER AS month_number,
     TRIM(TO_CHAR(date_value, 'Month')) AS month_name,
     EXTRACT(WEEK FROM date_value)::INTEGER AS week_number,
     TRIM(TO_CHAR(date_value, 'Day')) AS day_name
-FROM (
-    SELECT order_date AS date_value
-    FROM retail.stg_superstore
-
-    UNION
-
-    SELECT ship_date AS date_value
-    FROM retail.stg_superstore
-) d;
+FROM generate_series(
+    (SELECT MIN(order_date) FROM retail.stg_superstore),
+    (SELECT MAX(ship_date) FROM retail.stg_superstore),
+    INTERVAL '1 day'
+) AS calendar(date_value);
 
 /*
 =========================================================
