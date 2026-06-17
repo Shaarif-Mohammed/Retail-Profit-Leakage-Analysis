@@ -26,6 +26,8 @@ The findings from this document will be used to design the analytical database s
 
 This dataset has been taken from Kaggle. The name of the dataset is Sample Superstore Dataset. It contains over 10,000 retail sales records across multiple regions, product categories, and customer segments across North America.
 
+The Superstore dataset is a synthetic retail dataset commonly used for business intelligence training and portfolio development. Date ranges extend through 2026 and are not representative of real-world data.
+
 It includes information such as sales, profit, discount, quantity, shipping details, customer details and product details. It has over 20 columns containing all information in one Sheet in .CSV format.
 
 | **Attribute**     | **Value**                                                                                         |
