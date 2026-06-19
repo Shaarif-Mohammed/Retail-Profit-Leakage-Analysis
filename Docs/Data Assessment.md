@@ -1,10 +1,8 @@
-**DATA ASSESSMENT REPORT**
+## **DATA ASSESSMENT REPORT**
+#### **Retail Profit Leakage & Discount Effectiveness Analysis**
 
-**Project**
 
-**Retail Profit Leakage & Discount Effectiveness Analysis**
-
-**Introduction**
+### Introduction
 
 The purpose of this assessment is to understand the structure, quality, and business meaning of the Sample Superstore dataset before designing a data model and implementing a SQL-based analytics solution.
 
@@ -20,7 +18,7 @@ This assessment focuses on:
 
 The findings from this document will be used to design the analytical database schema and Power BI semantic model.
 
-**Dataset Overview**
+### Dataset Overview
 
 **Dataset Information:**
 
@@ -60,7 +58,7 @@ The dataset enables analysis of profit leakage, discount effectiveness, product 
 One row represents a single product line within an order.  
 A single Order ID can appear multiple times in the dataset because one order may contain multiple products. This grain will drive the design of the fact table in the analytical model.
 
-**Column Classification**
+### Column Classification
 
 **Identifiers**  
 \- Order ID  
@@ -98,7 +96,7 @@ A single Order ID can appear multiple times in the dataset because one order may
 
 - We would need to convert Order Date and Ship Date to proper date data types during preprocessing.
 
-**Data Quality Assessment**
+### Data Quality Assessment
 
 - No missing values were identified in the dataset.
 - No duplicate records were identified at the dataset grain level.
@@ -148,7 +146,7 @@ A single Order ID can appear multiple times in the dataset because one order may
 
 The number of unique Customer IDs exceeds the number of unique Customer Names. Similarly, the number of unique Product IDs exceeds the number of unique Product Names. This indicates that business names are not guaranteed to be unique and confirms that Customer ID and Product ID should be used as the primary identifiers in the dimensional model.
 
-**Initial Business Observations**
+### Initial Business Observations
 
 - Negative profit values are present within the dataset. This indicates that certain transactions generated losses despite producing revenue.
 - Discounts range from 0% to 80%. This suggests significant variability in discounting practices and indicates that pricing strategy may be influencing profitability.
@@ -156,7 +154,7 @@ The number of unique Customer IDs exceeds the number of unique Customer Names. S
 - Product hierarchy consists of 3 categories and 17 sub-categories. This structure supports category-level and sub-category-level profitability analysis.
 - Customer segmentation is limited to three business segments, enabling comparison of profitability across customer types.
 
-**Conclusion**
+### Conclusion
 
 The dataset exhibits strong data quality with no missing values and no duplicate records. The data structure is suitable for dimensional modeling and supports analysis of profit leakage, discount effectiveness, customer behavior, product performance, and regional profitability.
 

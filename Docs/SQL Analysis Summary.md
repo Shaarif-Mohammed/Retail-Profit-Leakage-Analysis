@@ -1,4 +1,5 @@
-## SQL Analysis Summary
+## **SQL Analysis Summary**
+#### **Retail Profit Analysis and Discount Effectiveness Analysis**
 
 ### Overview
 
@@ -71,29 +72,21 @@ Regional discounting practices may be influencing profitability outcomes.
 
 This relationship will be explored further during dashboard development and interactive analysis.
 
-## Preliminary Hypotheses
+### Preliminary Hypotheses
 
 Based on the SQL analysis, several hypotheses have emerged:
 
-### Hypothesis 1
+**Hypothesis 1** : Aggressive discounting is a primary contributor to profit leakage.
 
-Aggressive discounting is a primary contributor to profit leakage.
+**Hypothesis 2**: Profit leakage is concentrated within a relatively small number of products and sub-categories rather than across the entire business.
 
-### Hypothesis 2
+**Hypothesis 3**: Furniture-related products, particularly Tables and Bookcases, contribute disproportionately to profitability challenges.
 
-Profit leakage is concentrated within a relatively small number of products and sub-categories rather than across the entire business.
-
-### Hypothesis 3
-
-Furniture-related products, particularly Tables and Bookcases, contribute disproportionately to profitability challenges.
-
-### Hypothesis 4
-
-Regional pricing and discounting behavior may influence profitability performance.
+**Hypothesis 4**: Regional pricing and discounting behavior may influence profitability performance.
 
 These hypotheses will be validated and refined during the Power BI analysis phase.
 
-## Next Steps
+### Next Steps
 
 The findings documented in this report represent preliminary observations derived from SQL-based exploratory analysis.
 

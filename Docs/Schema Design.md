@@ -1,10 +1,8 @@
-**Schema Design Document**
+## **Schema Design Document**
+#### Retail Profit Leakage & Discount Effectiveness Analysis
 
-**Project**
 
-Retail Profit Leakage & Discount Effectiveness Analysis
-
-**1\. Objective**
+### 1\. Objective
 
 The purpose of this document is to define the dimensional model for the Retail Profit Leakage & Discount Effectiveness Analysis project.
 
@@ -19,7 +17,7 @@ The schema is designed to support SQL-based analysis and Power BI reporting for 
 
 A star schema approach is used to separate measurable business transactions from descriptive business attributes.
 
-**2\. Modeling Approach**
+### 2\. Modeling Approach
 
 This project uses a star schema design.
 
@@ -32,7 +30,7 @@ A star schema contains:
 
 This design supports efficient aggregation, simplified reporting, and clear relationships for Power BI.
 
-**3\. Dataset Grain**
+### 3\. Dataset Grain
 
 The source dataset grain is:
 
@@ -42,7 +40,7 @@ This means that a single Order ID can appear multiple times when an order contai
 
 Because the dataset is at the order-line level, the fact table will also be designed at the order-line level.
 
-**4\. Proposed Star Schema**
+### 4\. Proposed Star Schema
 
 The analytical model will contain one fact table and five dimension tables.
 
@@ -58,7 +56,7 @@ The analytical model will contain one fact table and five dimension tables.
 - dim_geography
 - dim_date
 
-**5\. Fact Table Design**
+### 5\. Fact Table Design
 
 **fact_sales**
 
@@ -93,7 +91,7 @@ This table captures the measurable business activity used for profitability and 
 
 These fields are stored in the fact table because they are numeric business measures used for aggregation and analysis.
 
-**6\. Dimension Table Design**
+### 6\. Dimension Table Design
 
 **dim_product**
 
@@ -196,7 +194,7 @@ The fact table will connect to dim_date twice:
 
 This allows analysis by both order date and ship date.
 
-**7\. Relationships**
+### 7\. Relationships
 
 The schema uses one-to-many relationships from dimension tables to the fact table.
 
@@ -209,7 +207,7 @@ The schema uses one-to-many relationships from dimension tables to the fact tabl
 | dim_date            | date_key        | order_date_key        | One date to many sales rows             |
 | dim_date            | date_key        | ship_date_key         | One date to many sales rows             |
 
-**8\. Power BI Modeling Considerations**
+### 8\. Power BI Modeling Considerations
 
 The schema is designed to support Power BI reporting.
 
@@ -223,17 +221,7 @@ Recommended Power BI model behavior:
 - Use order_date_key as the primary date relationship for sales and profit trends.
 - Use ship_date_key as a secondary date relationship when analyzing shipping timelines.
 
-**9\. Future Enhancements**
-
-Future improvements may include:
-
-- Adding calculated business metrics such as profit margin and discount bands
-- Creating SQL views for profitability analysis
-- Creating SQL views for discount effectiveness analysis
-- Adding a shipping delay metric using order date and ship date
-- Extending the model for advanced analytics or predictive modeling
-
-**10\. Conclusion**
+### Conclusion
 
 This schema design provides a structured dimensional model for retail profitability analysis.
 
