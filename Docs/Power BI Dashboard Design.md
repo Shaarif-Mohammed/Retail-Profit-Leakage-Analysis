@@ -43,3 +43,34 @@ The dashboard follows a progressive analytical workflow.
 Users begin with a high-level understanding of business performance before investigating specific profitability issues, discounting behavior, and regional performance differences and temporal behaviour of key metrics.
 
 This structure mirrors the analytical process used during SQL exploration and supports both executive reporting and detailed business investigation.
+
+### Page 1 - Executive Overview
+
+The Executive Overview page serves as the primary entry point into the reporting solution.
+
+Its objective is to provide an immediate assessment of overall business performance while establishing context for deeper analytical exploration throughout the dashboard.
+
+<img src="../images/Executive Overview.png" width="1100">
+
+**Key Questions Answered**
+
+- How is the business performing overall?
+- Which categories generate the most sales and profit?
+- Which regions contribute the most revenue and profit?
+- Which categories have stronger or weaker profit margins?
+- How are sales and profit trending quarterly?
+
+**KPI Cards**
+
+- Total Sales
+- Total Profit
+- Total Loss
+- Profit Margin %
+- Average Discount %
+
+**Visuals**
+
+- Total Sales and Total Profit by Category
+- Total Sales and Total Profit by Region
+- Profit Margin % by Category
+- Total Sales & Profit Trend Quarterly
