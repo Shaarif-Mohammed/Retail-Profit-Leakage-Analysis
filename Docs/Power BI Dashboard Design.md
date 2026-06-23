@@ -74,3 +74,33 @@ Its objective is to provide an immediate assessment of overall business performa
 - Total Sales and Total Profit by Region
 - Profit Margin % by Category
 - Total Sales & Profit Trend Quarterly
+
+### Page 2 - Profit Leakage Analysis
+
+The Profit Leakage Analysis page directly addresses the primary business objective of the project.
+
+Its purpose is to identify where profitability is being lost and determine which products, categories, and transactions contribute most significantly to negative financial outcomes.
+
+<img src="../images/Profit Leakage Analysis.png" width="1100">
+
+**Key Questions Answered**
+
+- How much loss is the business generating?
+- How much sales value is tied to loss-making transactions?
+- Which products are the biggest loss contributors?
+- Which categories are responsible for the highest loss exposure?
+- Which discount levels are associated with losses?
+
+**KPI Cards**
+
+- Total Loss
+- Loss Making Sales Value
+- Loss Making Orders
+- Loss Making Products
+- Loss Making Transactions
+
+**Visuals**
+
+- Top 15 Loss Making Products (Drill-Through)
+- Total Loss by Discount Bucket (Drill Down)
+- Total Loss by Category (Drill Down)
