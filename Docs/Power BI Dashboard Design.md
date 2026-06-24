@@ -104,3 +104,32 @@ Its purpose is to identify where profitability is being lost and determine which
 - Top 15 Loss Making Products (Drill-Through)
 - Total Loss by Discount Bucket (Drill Down)
 - Total Loss by Category (Drill Down)
+
+### Page 3 - Discount Effectiveness Analysis
+
+The Discount Effectiveness Analysis page evaluates the relationship between discounting behavior and profitability.
+
+The page was designed to validate hypotheses generated during SQL analysis and determine whether current discounting practices support or undermine business performance.
+
+<img src="../images/Discount Effectiveness Analysis.png" width="1100">
+
+**Key Questions Answered**
+
+- Which subcategories receive the highest average discounts?
+- How does profit margin change across discount buckets?
+- Are discounted sales generating profit or loss?
+- Which discount levels create the greatest profitability risk?
+
+**KPI Cards**
+
+- Discounted Sales
+- Discounted Profit
+- Average Discount %
+- Average Profit Margin %
+- Units Sold at Discount
+
+**Visuals**
+
+- Profit Margin % by Discount Bucket
+- Average Discount % by Sub Category
+- Total Sales and Total Profit by Discount Bucket
