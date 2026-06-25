@@ -133,3 +133,30 @@ The page was designed to validate hypotheses generated during SQL analysis and d
 - Profit Margin % by Discount Bucket
 - Average Discount % by Sub Category
 - Total Sales and Total Profit by Discount Bucket
+
+### Page 4 - Regional Performance Analysis
+
+The Regional Performance Analysis page evaluates business performance across geographic markets and investigates whether regional characteristics influence profitability outcomes.
+
+<img src="../images/Regional Performance Analysis.png" width="1100">
+
+**Key Questions Answered**
+
+- Which states have the highest profit exposure?
+- Which states create the greatest loss exposure?
+- How do average discount and profit margin vary across regions?
+- Where are geographic profitability risks concentrated?
+
+**KPI Cards**
+
+- Total Sales
+- Total Profit
+- Total Loss
+- Profit Margin %
+- Average Discount %
+
+**Visuals**
+
+- Avg Discount % & Profit Margin % by Region
+- State wise Performance on Total Profit
+- States with Highest Loss Exposure
