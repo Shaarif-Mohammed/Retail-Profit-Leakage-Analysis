@@ -50,7 +50,7 @@ The Executive Overview page serves as the primary entry point into the reporting
 
 Its objective is to provide an immediate assessment of overall business performance while establishing context for deeper analytical exploration throughout the dashboard.
 
-<img src="../images/Executive Overview.png" width="1100">
+<img src="../Images/Executive Overview.png" width="1100">
 
 **Key Questions Answered**
 
@@ -81,7 +81,7 @@ The Profit Leakage Analysis page directly addresses the primary business objecti
 
 Its purpose is to identify where profitability is being lost and determine which products, categories, and transactions contribute most significantly to negative financial outcomes.
 
-<img src="../images/Profit Leakage Analysis.png" width="1100">
+<img src="../Images/Profit Leakage Analysis.png" width="1100">
 
 **Key Questions Answered**
 
@@ -111,7 +111,7 @@ The Discount Effectiveness Analysis page evaluates the relationship between disc
 
 The page was designed to validate hypotheses generated during SQL analysis and determine whether current discounting practices support or undermine business performance.
 
-<img src="../images/Discount Effectiveness Analysis.png" width="1100">
+<img src="../Images/Discount Effectiveness Analysis.png" width="1100">
 
 **Key Questions Answered**
 
@@ -138,7 +138,7 @@ The page was designed to validate hypotheses generated during SQL analysis and d
 
 The Regional Performance Analysis page evaluates business performance across geographic markets and investigates whether regional characteristics influence profitability outcomes.
 
-<img src="../images/Regional Performance Analysis.png" width="1100">
+<img src="../Images/Regional Performance Analysis.png" width="1100">
 
 **Key Questions Answered**
 
@@ -165,7 +165,7 @@ The Regional Performance Analysis page evaluates business performance across geo
 
 Monitors profitability trends over time and evaluates whether profit leakage is improving or worsening.
 
-<img src="../images/Time Intelligence Trend Analysis.png" width="1100">
+<img src="../Images/Time Intelligence Trend Analysis.png" width="1100">
 
 **Key Questions Answered**
 
