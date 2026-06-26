@@ -160,3 +160,32 @@ The Regional Performance Analysis page evaluates business performance across geo
 - Avg Discount % & Profit Margin % by Region
 - State wise Performance on Total Profit
 - States with Highest Loss Exposure
+
+### Page 5 - Time Intelligence Trend Analysis
+
+Monitors profitability trends over time and evaluates whether profit leakage is improving or worsening.
+
+<img src="../images/Time Intelligence Trend Analysis.png" width="1100">
+
+**Key Questions Answered**
+
+- Is profit leakage increasing over time?
+- How do current YTD losses compare with prior year YTD losses?
+- Are high-discount losses increasing?
+- How are sales, profit, and loss changing year-over-year?
+- How is profit margin trending across years?
+
+**KPI Cards**
+
+- YTD Loss
+- Prior Year YTD Loss
+- YoY Loss Growth %
+- YTD Avg Discount %
+- YoY Avg Discount Change %
+
+**Visuals**
+
+- YoY Change Sales, Profit and Loss
+- YTD Loss and Prior Year YTD Loss by Year
+- YTD Loss Comparison for 30%+ Discount Bucket
+- Profit Margin % by Year
