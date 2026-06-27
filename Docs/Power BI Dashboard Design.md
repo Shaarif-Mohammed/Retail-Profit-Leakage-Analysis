@@ -189,3 +189,34 @@ Monitors profitability trends over time and evaluates whether profit leakage is 
 - YTD Loss and Prior Year YTD Loss by Year
 - YTD Loss Comparison for 30%+ Discount Bucket
 - Profit Margin % by Year
+
+### Product Detail Drillthrough Page
+
+Provides detailed product-level analysis for loss-making products identified throughout the report.
+
+<img src="../Images/Product Detail Analysis (Drill-Through).png" width="1100">
+
+**Key Questions Answered**
+
+- Why is a selected product losing money?
+- How does the selected product perform over time?
+- Which regions contribute to losses for the selected product?
+- Which discount levels are associated with product-level losses?
+- Which individual transactions explain the product's performance?
+
+**KPI Cards**
+
+- Total Sales
+- Total Profit
+- Total Loss
+- Profit Margin %
+- Avg Discount
+- Units Sold
+- Units Sold for Loss
+
+**Visuals**
+
+- Total Sales & Profit over Time
+- Total Loss by Region
+- Total Loss by Discount Bucket
+- Detailed Sales Data
