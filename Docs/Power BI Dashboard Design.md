@@ -220,3 +220,57 @@ Provides detailed product-level analysis for loss-making products identified thr
 - Total Loss by Region
 - Total Loss by Discount Bucket
 - Detailed Sales Data
+
+### Interactive Features
+
+**Synced Slicers**
+
+The report uses synchronized slicers to preserve analytical context across pages. Users can apply filters once and continue navigating through the report without losing the selected context.
+
+Synced slicers include:
+
+- Year
+- Region
+- Category
+
+Additional page-specific slicers are used where relevant, such as Sub Category, Discount Bucket, Customer Segment, and Country.
+
+**Page Navigation Buttons**
+
+Previous and Next buttons guide users through the report in a structured order. This supports a narrative-style dashboard experience rather than forcing users to rely only on report tabs.
+
+**Drill Down Functionality**
+
+Drill-down functionality is used to support deeper exploration within visuals.
+
+Implemented drill-down paths include:
+
+- Category → Sub Category within Profit Leakage Analysis
+- Discount Bucket → Actual Discount within Profit Leakage Analysis
+- Region → State within Regional Performance Analysis
+
+**Drillthrough Functionality**
+
+The Profit Leakage Analysis page supports product-level drill-through from the Top 15 Loss Making Products table.
+
+Users can right-click a product and navigate to the Product Detail Analysis page to review product-specific KPIs, regional losses, discount bucket losses, and transaction-level details.
+
+**Custom Tooltips**
+
+Custom tooltip pages provide additional analytical context without requiring users to leave the current page.
+
+<p align="center">
+    <img src="../Images/Custom Tooltip 1.png" width="48%">
+    <img src="../Images/Custom Tooltip 2.png" width="48%">
+</p>
+
+Implemented custom tooltips include:
+
+- Discount-related tooltip for subcategory discount analysis
+- State performance tooltip for regional map analysis
+
+### Conclusion
+
+This dashboard is designed as a guided business investigation into retail profit leakage. Each page has a clear analytical role: summarize business performance, identify losses, evaluate discount effectiveness, assess regional performance, and monitor trends over time.
+
+The combination of synced slicers, drill-down paths, drill-through analysis, custom tooltips, and page navigation buttons creates an interactive reporting experience that allows users to move from high-level executive insights to detailed root-cause investigation.
