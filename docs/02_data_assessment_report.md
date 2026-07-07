@@ -1,6 +1,6 @@
-## **DATA ASSESSMENT REPORT**
-#### **Retail Profit Leakage & Discount Effectiveness Analysis**
-
+## **Data Assessment Report**
+#### **Retail Profit Leakage and Discount Effectiveness Analysis**
+---
 
 ### Introduction
 
@@ -17,6 +17,8 @@ This assessment focuses on:
 - Modeling considerations
 
 The findings from this document will be used to design the analytical database schema and Power BI semantic model.
+
+---
 
 ### Dataset Overview
 
@@ -58,6 +60,8 @@ The dataset enables analysis of profit leakage, discount effectiveness, product 
 One row represents a single product line within an order.  
 A single Order ID can appear multiple times in the dataset because one order may contain multiple products. This grain will drive the design of the fact table in the analytical model.
 
+---
+
 ### Column Classification
 
 **Identifiers**  
@@ -95,6 +99,8 @@ A single Order ID can appear multiple times in the dataset because one order may
 **Recommended Action**
 
 - We would need to convert Order Date and Ship Date to proper date data types during preprocessing.
+
+---
 
 ### Data Quality Assessment
 
@@ -146,6 +152,8 @@ A single Order ID can appear multiple times in the dataset because one order may
 
 The number of unique Customer IDs exceeds the number of unique Customer Names. Similarly, the number of unique Product IDs exceeds the number of unique Product Names. This indicates that business names are not guaranteed to be unique and confirms that Customer ID and Product ID should be used as the primary identifiers in the dimensional model.
 
+---
+
 ### Initial Business Observations
 
 - Negative profit values are present within the dataset. This indicates that certain transactions generated losses despite producing revenue.
@@ -153,6 +161,8 @@ The number of unique Customer IDs exceeds the number of unique Customer Names. S
 - Orders can contain multiple product lines. This confirms that the dataset operates at the order-line level and supports detailed product-level profitability analysis.
 - Product hierarchy consists of 3 categories and 17 sub-categories. This structure supports category-level and sub-category-level profitability analysis.
 - Customer segmentation is limited to three business segments, enabling comparison of profitability across customer types.
+
+---
 
 ### Conclusion
 

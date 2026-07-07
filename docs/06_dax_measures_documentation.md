@@ -1,6 +1,6 @@
 ## **DAX Measure Framework Documentation**
-#### **Retail Profit Leakage & Discount Effectiveness Analysis**
-
+#### **Retail Profit Leakage and Discount Effectiveness Analysis**
+---
 
 ### Overview
 
@@ -11,6 +11,8 @@ The objective of this phase was to establish a centralized, reusable, and scalab
 Rather than relying on implicit aggregations generated within report visuals, explicit DAX measures were created to ensure calculation consistency, improve maintainability, and support future analytical expansion.
 
 The measure framework forms the foundation for all report pages, visualizations, business metrics, and executive dashboards developed during subsequent phases of the project.
+
+---
 
 ### Introduction
 
@@ -26,6 +28,8 @@ In this project, DAX measures were used to support five key analytical areas:
 
 The measures were organized into logical groups to improve maintainability, readability, and report development efficiency.
 
+---
+
 ### Measure Architecture
 
 A dedicated measure table was implemented to centralize all analytical calculations within the semantic model.
@@ -39,6 +43,8 @@ This approach provides several advantages:
 - Reduced model complexity for report consumers
 
 The measure table serves as the single source of truth for business calculations used throughout the reporting solution.
+
+---
 
 ### Core KPI Measures
 
@@ -56,6 +62,8 @@ These measures form the foundation of the report and represent the primary busin
 
 These measures serve as the primary performance indicators for evaluating overall business health. They are used extensively in KPI cards, category analysis, regional analysis, and trend reporting. Most advanced measures in the model are derived from these foundational KPIs.
 
+---
+
 ### Count Measures
 
 These measures provide entity-level counts and support customer, product, and order analysis.
@@ -70,6 +78,8 @@ These measures provide entity-level counts and support customer, product, and or
 
 Count measures provide context to revenue and profitability metrics. They help quantify business scale and customer reach while supporting executive summary reporting and performance benchmarking.
 
+---
+
 ### Discount Analysis Measures
 
 These measures evaluate the effectiveness and impact of discounting strategies.
@@ -83,6 +93,8 @@ These measures evaluate the effectiveness and impact of discounting strategies.
 **Business Purpose**
 
 The objective of these measures is to determine whether discounts contribute positively to revenue growth or negatively impact profitability. These calculations support the Discount Effectiveness Analysis page and help identify subcategories where aggressive discounting may be reducing margins.
+
+---
 
 ### Profit Leakage Measures
 
@@ -103,6 +115,8 @@ These measures form the analytical core of the project. Rather than focusing sol
 
 The Profit Leakage Analysis page uses these measures to identify loss-generating products, categories, discount buckets, and transactions.
 
+---
+
 ### Dynamic Reporting Measures
 
 These measures support interactive reporting features such as drill-through pages and dynamic report titles.
@@ -116,6 +130,8 @@ These measures support interactive reporting features such as drill-through page
 **Business Purpose**
 
 These measures improve report usability and enhance the user experience by creating context-aware titles, labels, and summaries that respond dynamically to user selections.
+
+---
 
 ### Time Intelligence - Year-to-Date Measures
 
@@ -132,6 +148,8 @@ These measures evaluate cumulative business performance within the current year.
 
 YTD measures provide a cumulative view of business performance and allow management to evaluate progress throughout the year rather than relying solely on individual monthly results.
 
+---
+
 ### Time Intelligence - Prior Year Measures
 
 These measures calculate equivalent Year-to-Date metrics for the previous year.
@@ -146,6 +164,8 @@ These measures calculate equivalent Year-to-Date metrics for the previous year.
 **Business Purpose**
 
 These measures establish a historical baseline for performance comparison and allow year-over-year benchmarking of revenue, profitability, losses, and discounting behavior.
+
+---
 
 ### Time Intelligence - Year-over-Year Measures
 
@@ -163,6 +183,8 @@ These measures quantify performance changes relative to the previous year.
 These measures were used to determine whether business performance is improving or deteriorating over time. They support trend analysis and help answer critical business questions.
 
 These measures form the foundation of the Profitability Trend Analysis page.
+
+---
 
 ### Conclusion
 

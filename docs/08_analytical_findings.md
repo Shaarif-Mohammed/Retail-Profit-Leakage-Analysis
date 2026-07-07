@@ -1,5 +1,6 @@
 ## **Analytical Findings**
-#### **Retail Profit Leakage & Discount Effectiveness Analysis**
+#### **Retail Profit Leakage and Discount Effectiveness Analysis**
+---
 
 ### Introduction
 
@@ -7,9 +8,13 @@ The purpose of this analysis was to investigate profit leakage within the retail
 
 Using a combination of SQL analysis and an interactive Power BI dashboard, the investigation progressed from high-level business performance to detailed root-cause analysis. The findings presented in this document follow the same analytical journey as the dashboard, examining overall performance, loss-generating products, discount effectiveness, regional trends, and historical performance patterns to understand where profit leakage occurs and what business factors contribute to it.
 
+---
+
 ### Scope and Methodology
 
 This document presents the detailed analytical findings derived from exploratory SQL analysis and Power BI investigation of the Superstore retail dataset (10,194 order lines, January 2023 - December 2026, United States and Canada). Findings are organized to mirror the structure of the Power BI dashboard - Executive Overview, Profit Leakage Analysis, Discount Effectiveness Analysis, Regional Performance Analysis, and Time Intelligence Trend Analysis - so each section can be read alongside its corresponding dashboard page. All figures have been reconciled against the published dashboard and the underlying PostgreSQL data warehouse.
+
+---
 
 ### Page 1 - Executive Overview Findings
 
@@ -24,6 +29,8 @@ Regional analysis revealed a similar imbalance. The **West region** generated th
 The quarterly sales and profit trend further showed that revenue growth was not always translating into proportional profit growth, reinforcing the need for deeper investigation.
 
 Overall, the Executive Overview established the key theme for the remainder of the analysis: **while the business was profitable overall, certain categories, products, and regions were generating disproportionate losses that were reducing overall profitability.**
+
+---
 
 ### Page 2 - Profit Leakage Analysis Findings
 
@@ -48,6 +55,8 @@ The Total Loss by Discount Bucket visual provided the most significant insight o
 
 Overall, the Profit Leakage Analysis established that **profit leakage was highly concentrated within a small number of products, subcategories, and discount levels,** providing a clear direction for the next stage of the investigation.
 
+---
+
 ### Page 3 - Discount Effectiveness Analysis Findings
 
 The Profit Leakage Analysis page established that more than 80% of all losses originated from transactions receiving discounts above 30%. The next step was determining whether discounting itself was the primary driver of profit leakage and understanding how profitability changed across different discount levels.
@@ -63,6 +72,8 @@ The custom tooltip implemented on this page provided additional context while ex
 Further analysis showed that discounted transactions generated **\$1.22M in sales but a net loss of \$34.4K (-2.82% margin)**, whereas non-discounted transactions generated **\$326.7K in profit at a margin of 29.56%**. In addition, the relationship between discount depth and order quantity was effectively zero (**correlation = +0.007**), indicating that larger discounts were not associated with larger order sizes. This challenges the assumption that aggressive discounting was successfully driving additional demand.
 
 Overall, the Discount Effectiveness Analysis demonstrated that **discounting was the single strongest driver of profit leakage. The issue was not the presence of discounts themselves, but the concentration of deep discounts on already vulnerable products and subcategories, resulting in substantial margin erosion and persistent losses.**
+
+---
 
 ### Page 4 - Regional Performance Analysis Findings
 
@@ -90,6 +101,8 @@ The Regional Analysis page also highlighted an important interaction between geo
 
 Overall, the Regional Performance Analysis demonstrated that profit leakage was not only a product and discounting problem but also a geographic one. A relatively small number of states and regions were responsible for a disproportionate share of losses, suggesting that profitability challenges were concentrated within specific markets rather than across the entire business.
 
+---
+
 ### Page 5 - Time Intelligence Trend Analysis Findings
 
 The previous pages identified where profit leakage was occurring and the factors contributing to it. The final step was determining whether the problem was improving, remaining stable, or becoming more severe over time.
@@ -111,6 +124,8 @@ This finding is particularly significant because it demonstrates that the busine
 The Profit Margin Trend visual provided further evidence. Profit margins improved between 2023 and 2025, reaching a peak of **13.46% in 2025**, before declining to **12.87% in 2026**. This marked the first year-over-year margin contraction in the dataset and coincided with the sharp increase in loss growth observed during the same period.
 
 Overall, the Time Intelligence Analysis demonstrated that profit leakage is not a historical issue that has already been addressed. Instead, it is a structural and recurring problem that has persisted throughout the analysis period. While sales and profits continue to grow, losses are growing at an even faster rate, largely driven by the same high-discount transactions identified throughout the rest of the investigation.
+
+---
 
 ### Root Cause Summary
 

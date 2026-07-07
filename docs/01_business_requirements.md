@@ -1,5 +1,6 @@
 ## **Business Problem & Requirements**
-#### **Retail Profit Leakage & Discount Analysis**
+#### **Retail Profit Leakage and Discount Effectiveness Analysis**
+---
 
 ### Project Overview
 

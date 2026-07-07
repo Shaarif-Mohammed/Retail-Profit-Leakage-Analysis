@@ -1,6 +1,6 @@
 ## **Semantic Model Documentation**
-#### Retail Profit Leakage and Discount Effectiveness Analysis
-
+#### **Retail Profit Leakage and Discount Effectiveness Analysis**
+---
 
 ### Overview
 
@@ -9,6 +9,8 @@ Following the completion of the PostgreSQL data warehouse and SQL-based explorat
 The semantic model provides an analytical layer between the physical warehouse and the reporting experience. It was designed using dimensional modeling principles to ensure consistent calculations, efficient filtering behavior, and scalable report development.
 
 The model follows a star schema architecture and serves as the foundation for all dashboard pages, KPIs, and analytical measures developed during subsequent phases of the project.
+
+---
 
 ### Data Source Architecture
 
@@ -29,6 +31,8 @@ The staging layer was intentionally excluded because it exists solely to support
 
 Import mode was selected due to the relatively small dataset size and the need for optimal dashboard performance.
 
+---
+
 ### Dimensional Model Design
 
 The model is centered around the fact_sales table, which stores transactional business measures including sales, profit, quantity, and discount.
@@ -41,6 +45,8 @@ The semantic model follows a star schema design to:
 - Improve query performance
 - Support reusable DAX calculations
 - Maintain clear separation between measures and descriptive attributes
+
+---
 
 ### Relationship Configuration
 
@@ -56,9 +62,11 @@ Relationships were created between the fact table and each dimension table using
 
 Single-direction filtering was adopted throughout the model to maintain predictable filter propagation and reduce ambiguity.
 
+---
+
 ### Semantic Model
 
-<img src="../Images/Semantic Model.png" width="1300">
+<img src="../images/01_semantic_model.png" width="1300">
 
 
 **Date Intelligence Configuration**
@@ -77,6 +85,8 @@ This implementation supports:
 - Future trend and period-over-period analysis
 
 The built-in Auto Date/Time feature was disabled in favor of the custom date dimension.
+
+---
 
 ### Business Hierarchies
 
@@ -102,6 +112,8 @@ Year
 
 These hierarchies provide a structured navigation path that aligns with expected business reporting workflows.
 
+---
+
 ### Model Optimization
 
 Technical fields used primarily for relationships were hidden from report consumers to reduce clutter and improve usability.
@@ -125,6 +137,8 @@ Configured categories include:
 
 The Region field was intentionally left uncategorized because it represents business reporting regions rather than geographic entities recognized by mapping services.
 
+---
+
 ### Model Validation
 
 Following model construction, aggregate measures were reconciled against previously validated SQL outputs to verify data integrity and relationship behavior.
@@ -138,6 +152,8 @@ Validation included:
 - Profit Margin
 
 Successful reconciliation confirmed that the semantic model accurately represented the underlying warehouse data and was ready for analytical development.
+
+---
 
 ### Conclusion
 

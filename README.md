@@ -1,4 +1,4 @@
-## Retail Profit Leakage & Discount Effectiveness Analysis
+## Retail Profit Leakage and Discount Effectiveness Analysis
 
 ### Project Overview
 
@@ -33,9 +33,19 @@ Key business questions addressed include:
 
 ---
 
+### Dataset
+
+This project uses the **Sample Superstore** retail transaction dataset, a widely used dataset for business intelligence and analytics projects.
+
+Source: [Kaggle](https://www.kaggle.com/datasets/himanshuuike/superstore-sales-dataset?resource=download) 
+
+The dataset contains over **10,000 retail order-line transactions** covering sales, profit, discounts, customers, products, shipping, and geographic information. It serves as the foundation for data assessment, SQL modeling, profitability analysis, and Power BI reporting.
+
+---
+
 ### Semantic Model
 
-<img src="images/Semantic Model.png" width="1300">
+<img src="images/01_semantic_model.png" width="1300">
 
 The reporting solution is built using a star schema consisting of:
 
@@ -54,23 +64,23 @@ The model supports scalable reporting, efficient filtering, and advanced DAX cal
 
 **Executive Overview**
 
-<img src="images/Executive Overview.png" width="1100">
+<img src="images/02_executive_overview.png" width="1100">
 
 **Profit Leakage Analysis**
 
-<img src="images/Profit Leakage Analysis.png" width="1100">
+<img src="images/03_profit_leakage_analysis.png" width="1100">
 
 **Discount Effectiveness Analysis**
 
-<img src="images/Discount Effectiveness Analysis.png" width="1100">
+<img src="images/04_discount_effectiveness_analysis.png" width="1100">
 
 **Regional Performance Analysis**
 
-<img src="images/Regional Performance Analysis.png" width="1100">
+<img src="images/05_regional_performance_analysis.png" width="1100">
 
 **Time Intelligence Analysis**
 
-<img src="images/Time Intelligence Trend Analysis.png" width="1100">
+<img src="images/06_time_intelligence_trend_analysis.png" width="1100">
 
 ### Interactive Features
 
@@ -89,15 +99,15 @@ The model supports scalable reporting, efficient filtering, and advanced DAX cal
   - Navigate directly from loss-making products to detailed product-level investigation
   - Analyze sales, profit, loss, discount exposure, regional performance, and transaction details
  
- <img src="images/Product Detail Analysis (Drill-Through).png" width="1100">
+ <img src="images/07_product_detail_analysis_(drill_through).png" width="1100">
 
 - **Custom Tooltips**
   - Discount analysis tooltip for subcategory performance
   - State-level performance tooltip within regional analysis
 
 <p align="center">
-    <img src="Images/Custom Tooltip 1.png" width="48%">
-    <img src="Images/Custom Tooltip 2.png" width="48%">
+    <img src="images/08_custom_tooltip_1.png" width="48%">
+    <img src="images/09_custom_tooltip_2.png" width="48%">
 </p>
 
 - **Page Navigation Buttons**
@@ -196,12 +206,13 @@ This layered approach allows users to move from high-level business performance 
 
 ### Repository Structure
 
+``` text
 Retail-Profit-Leakage-Analysis/
 │
-├── Data/
+├── data/
 │   └── 01_superstore_dataset.csv
 │
-├── Docs/
+├── docs/
 │   ├── 01_business_requirements.md
 │   ├── 02_data_assessment_report.md
 │   ├── 03_sql_analysis_summary.md
@@ -212,36 +223,35 @@ Retail-Profit-Leakage-Analysis/
 │   ├── 08_analytical_findings.md
 │   └── 09_key_insights_and_recommendations.md
 │
-├── Images/
+├── images/
 │   ├── 01_semantic_model.png
 │   ├── 02_executive_overview.png
 │   ├── 03_profit_leakage_analysis.png
 │   ├── 04_discount_effectiveness_analysis.png
 │   ├── 05_regional_performance_analysis.png
 │   ├── 06_time_intelligence_trend_analysis.png
-│   ├── 07_product_detail_analysis_(drill-through).png
-│   ├── 08_custom_tooltip-1.png
-│   ├── 09_custom_tooltip-2.png
-
+│   ├── 07_product_detail_drillthrough.png
+│   ├── 08_custom_tooltip_1.png
+│   └── 09_custom_tooltip_2.png
 │
-├── Notebooks/
+├── notebooks/
 │   └── 01_data_assessment.ipynb
 │
-├── PowerBI/
-│   ├── 02_Retail-Profit-Leakage-Analysis-Theme.json
-│   └── 01_Retail-Profit-Leakage-Analysis.pbix
+├── powerbi/
+│   ├── 01_retail_profit_leakage_analysis.pbix
+│   └── 02_retail_profit_leakage_analysis_theme.json
 │
-├── Sql/
+├── sql/
 │   ├── 01_create_schema.sql
 │   ├── 02_create_tables.sql
-│   ├── 03_create&load_staging_table.sql
+│   ├── 03_create_and_load_staging_table.sql
 │   ├── 04_load_dimensions.sql
 │   ├── 05_load_fact_table.sql
 │   ├── 06_validate_data_loads.sql
 │   └── 07_analysis_queries.sql
 │
 └── README.md
-
+```
 
 ---
 

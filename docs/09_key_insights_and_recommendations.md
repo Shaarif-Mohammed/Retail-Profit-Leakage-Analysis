@@ -1,6 +1,6 @@
 ## **Key Insights & Recommendations**
-#### **Retail Profit Leakage & Discount Effectiveness Analysis.**
-
+#### **Retail Profit Leakage and Discount Effectiveness Analysis.**
+---
 
 ### Executive Summary
 
@@ -9,6 +9,8 @@ The business generated **\$2.33M in sales** and **\$292.30K in profit**, demonst
 The investigation found that profit leakage is not widespread across the entire business. Instead, losses are concentrated within a relatively small number of products, subcategories, discount levels, and geographic markets. Most notably, transactions receiving discounts above 30% account for the majority of losses despite representing only a small share of overall sales.
 
 The findings suggest that the business has a significant opportunity to improve profitability without requiring additional sales growth. By addressing a small number of high-impact loss drivers, management can potentially improve margins while preserving overall revenue performance.
+
+---
 
 ### Profitability Challenges Are Concentrated, Not Widespread
 
@@ -19,6 +21,8 @@ Four subcategories - **Binders, Tables, Machines, and Bookcases** - account for 
 **Recommendation**
 
 Prioritize profitability reviews for high-loss subcategories and products. Focus management attention on the largest contributors to loss exposure rather than applying broad portfolio-wide actions.
+
+---
 
 ### Aggressive Discounting Is The Primary Driver Of Profit Leakage
 
@@ -32,6 +36,8 @@ The analysis also found virtually no relationship between discount depth and ord
 
 Review discount governance policies and approval thresholds for high-discount transactions. Consider implementing additional controls, margin guardrails, or approval workflows for discounts exceeding established profitability targets.
 
+---
+
 ### Geographic Markets Contribute Unevenly To Profitability
 
 Profitability performance varies significantly across regions and states.
@@ -44,6 +50,8 @@ These findings indicate that profitability challenges are concentrated within sp
 
 Conduct regional pricing and discounting reviews within underperforming markets. Identify local business practices, customer behaviors, or promotional strategies that may be contributing to elevated loss exposure.
 
+---
+
 ### Growth Alone Is Not Solving The Problem
 
 Sales and profits have increased steadily over the analysis period, demonstrating continued business growth. However, losses have also increased substantially.
@@ -53,6 +61,8 @@ Gross losses grew from **\$32.2K in 2023** to **\$54.2K in 2026**, a **68.4% inc
 **Recommendation**
 
 Establish ongoing profitability monitoring alongside traditional sales and revenue reporting. Future performance reviews should track loss exposure, discount effectiveness, and profit margin trends in addition to sales growth metrics.
+
+---
 
 ### Revenue Growth Does Not Always Equal Profit Growth
 
@@ -65,6 +75,8 @@ These findings demonstrate that revenue growth alone is not always a reliable in
 **Recommendation**
 
 Shift performance evaluations toward a balanced scorecard approach that considers profitability, margin performance, and loss exposure alongside sales growth.
+
+---
 
 ### Strategic Recommendations
 
@@ -89,6 +101,8 @@ Incorporate loss exposure, profit margin, and discount effectiveness into regula
 **5\. Align Growth Objectives With Profitability Objectives**
 
 Ensure that future growth initiatives are evaluated not only on their ability to generate revenue but also on their impact on long-term profitability and margin performance.
+
+---
 
 ### Conclusion
 

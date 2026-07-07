@@ -1,6 +1,6 @@
 ## **Power BI Dashboard Design**
 #### **Retail Profit Leakage and Discount Effectiveness Analysis**
-
+---
 
 ### Overview
 
@@ -9,6 +9,8 @@ The Retail Profit Leakage & Discount Effectiveness Analysis dashboard was design
 Rather than functioning as a traditional sales reporting dashboard, the solution follows a structured analytical workflow that guides users from high-level business performance metrics to detailed root-cause analysis. The dashboard enables users to identify where losses occur, understand the relationship between discounting and profitability, evaluate geographic performance, and monitor profitability trends over time.
 
 The reporting solution is designed around a business storytelling approach. Rather than presenting isolated metrics and charts, each page contributes to a structured analytical workflow that guides users from overall business performance toward increasingly detailed investigation and root-cause analysis.
+
+---
 
 ### Dashboard Navigation Flow
 
@@ -44,13 +46,15 @@ Users begin with a high-level understanding of business performance before inves
 
 This structure mirrors the analytical process used during SQL exploration and supports both executive reporting and detailed business investigation.
 
+---
+
 ### Page 1 - Executive Overview
 
 The Executive Overview page serves as the primary entry point into the reporting solution.
 
 Its objective is to provide an immediate assessment of overall business performance while establishing context for deeper analytical exploration throughout the dashboard.
 
-<img src="../Images/Executive Overview.png" width="1100">
+<img src="../images/02_executive_overview.png" width="1100">
 
 **Key Questions Answered**
 
@@ -75,13 +79,15 @@ Its objective is to provide an immediate assessment of overall business performa
 - Profit Margin % by Category
 - Total Sales & Profit Trend Quarterly
 
+---
+
 ### Page 2 - Profit Leakage Analysis
 
 The Profit Leakage Analysis page directly addresses the primary business objective of the project.
 
 Its purpose is to identify where profitability is being lost and determine which products, categories, and transactions contribute most significantly to negative financial outcomes.
 
-<img src="../Images/Profit Leakage Analysis.png" width="1100">
+<img src="../images/03_profit_leakage_analysis.png" width="1100">
 
 **Key Questions Answered**
 
@@ -105,13 +111,15 @@ Its purpose is to identify where profitability is being lost and determine which
 - Total Loss by Discount Bucket (Drill Down)
 - Total Loss by Category (Drill Down)
 
+---
+
 ### Page 3 - Discount Effectiveness Analysis
 
 The Discount Effectiveness Analysis page evaluates the relationship between discounting behavior and profitability.
 
 The page was designed to validate hypotheses generated during SQL analysis and determine whether current discounting practices support or undermine business performance.
 
-<img src="../Images/Discount Effectiveness Analysis.png" width="1100">
+<img src="../images/04_discount_effectiveness_analysis.png" width="1100">
 
 **Key Questions Answered**
 
@@ -134,11 +142,13 @@ The page was designed to validate hypotheses generated during SQL analysis and d
 - Average Discount % by Sub Category
 - Total Sales and Total Profit by Discount Bucket
 
+---
+
 ### Page 4 - Regional Performance Analysis
 
 The Regional Performance Analysis page evaluates business performance across geographic markets and investigates whether regional characteristics influence profitability outcomes.
 
-<img src="../Images/Regional Performance Analysis.png" width="1100">
+<img src="../images/05_regional_performance_analysis.png" width="1100">
 
 **Key Questions Answered**
 
@@ -161,11 +171,13 @@ The Regional Performance Analysis page evaluates business performance across geo
 - State wise Performance on Total Profit
 - States with Highest Loss Exposure
 
+---
+
 ### Page 5 - Time Intelligence Trend Analysis
 
 Monitors profitability trends over time and evaluates whether profit leakage is improving or worsening.
 
-<img src="../Images/Time Intelligence Trend Analysis.png" width="1100">
+<img src="../images/06_time_intelligence_trend_analysis.png" width="1100">
 
 **Key Questions Answered**
 
@@ -190,11 +202,13 @@ Monitors profitability trends over time and evaluates whether profit leakage is 
 - YTD Loss Comparison for 30%+ Discount Bucket
 - Profit Margin % by Year
 
+---
+
 ### Product Detail Drillthrough Page
 
 Provides detailed product-level analysis for loss-making products identified throughout the report.
 
-<img src="../Images/Product Detail Analysis (Drill-Through).png" width="1100">
+<img src="../images/07_product_detail_analysis_(drill_through).png" width="1100">
 
 **Key Questions Answered**
 
@@ -220,6 +234,8 @@ Provides detailed product-level analysis for loss-making products identified thr
 - Total Loss by Region
 - Total Loss by Discount Bucket
 - Detailed Sales Data
+
+---
 
 ### Interactive Features
 
@@ -260,14 +276,16 @@ Users can right-click a product and navigate to the Product Detail Analysis page
 Custom tooltip pages provide additional analytical context without requiring users to leave the current page.
 
 <p align="center">
-    <img src="../Images/Custom Tooltip 1.png" width="48%">
-    <img src="../Images/Custom Tooltip 2.png" width="48%">
+    <img src="../images/08_custom_tooltip_1.png" width="48%">
+    <img src="../images/09_custom_tooltip_2.png" width="48%">
 </p>
 
 Implemented custom tooltips include:
 
 - Discount-related tooltip for subcategory discount analysis
 - State performance tooltip for regional map analysis
+
+---
 
 ### Conclusion
 
